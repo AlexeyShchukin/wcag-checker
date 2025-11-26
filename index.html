@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WCAG Contrast Checker - Instant Accessibility Tool</title>
+    <meta name="description" content="Instantly check color contrast ratio on any webpage against WCAG 2.2 AA/AAA standards without leaving your browser. Fast, accurate, and essential for accessibility testing.">
+    <style>
+        /* Base styles */
+        :root {
+            --primary-color: #3b82f6; /* Blue for the main button */
+            --secondary-color: #f3f4f6; /* Light gray for backgrounds */
+            --text-color: #1f2937; /* Dark gray for text */
+            --bg-color: #ffffff;
+            --font-stack: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --max-width: 1000px;
+        }
+
+        body {
+            font-family: var(--font-stack);
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Layout */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .hero-section {
+            background-color: var(--secondary-color);
+            text-align: center;
+            padding: 6rem 0;
+        }
+
+        .features-section {
+            background-color: var(--bg-color);
+        }
+
+        .cta-section {
+            background-color: var(--primary-color);
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .hero-section p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            color: #4b5563;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: #fff;
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: #fff;
+            color: var(--primary-color);
+            border: 2px solid #fff;
+        }
+
+        .btn-secondary:hover {
+            background-color: #f3f4f6;
+            transform: translateY(-2px);
+        }
+
+        /* Feature Grid */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            padding: 1.5rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.75rem;
+            text-align: left;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .feature-card p {
+            font-size: 1rem;
+            color: #4b5563;
+        }
+
+        /* Footer (optional, but good practice) */
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid #e5e7eb;
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .hero-section p {
+                font-size: 1.1rem;
+            }
+            .btn {
+                padding: 0.6rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero-section">
+        <div class="container">
+            <h1>WCAG Contrast Checker: <br> Color Accessibility in 1 Second.</h1>
+            <p>Stop wasting time on manual calculations. Instantly verify the contrast ratio of any on-page element against <strong>WCAG 2.2 AA/AAA</strong> standards. The tool that works <em>where you work</em> — right inside your Chrome browser.</p>
+            <a href="https://chromewebstore.google.com/detail/wcag-contrast-checker/moeekkcjabmojhnfljngmohaaigchpbf?authuser=0&hl=en" target="_blank" class="btn btn-primary">
+                🚀 Download from CWS
+            </a>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2>Fewer Context Switches, Better Results.</h2>
+            <div class="feature-grid">
+
+                <div class="feature-card">
+                    <h3>Real-Time Accuracy</h3>
+                    <p>No need to copy HEX codes. Simply hover over text or UI components to instantly see the precise contrast <strong>Ratio</strong> and the <strong>Pass/Fail</strong> status for the current WCAG level.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Always On Hand</h3>
+                    <p>Seamlessly integrated into your Chrome panel. Start your accessibility audit <strong>with a single click</strong>, without switching tabs or leaving your design environment.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Comprehensive AA/AAA Audit</h3>
+                    <p>Quickly toggle between <strong>AA</strong> and <strong>AAA</strong> levels for small and large text. Ensure the highest level of inclusivity and compliance for your product.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Make Your Website Accessible Today.</h2>
+            <p style="margin-bottom: 2rem; font-size: 1.25rem;">Thousands of designers and developers already use WCAG Contrast Checker to speed up their workflow and ensure compliance with accessibility standards. Join them!</p>
+            <a href="https://chromewebstore.google.com/detail/wcag-contrast-checker/moeekkcjabmojhnfljngmohaaigchpbf?authuser=0&hl=en" target="_blank" class="btn btn-secondary">
+                ⬇️ Download from CWS
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 WCAG Contrast Checker. Built for developers and designers who value accessibility.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
